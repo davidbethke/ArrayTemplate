@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "ArrayT.h"
+#include "ArrayTHelper.h"
 //#include "ArrayTHelper.h"
 #include <iostream>
 #include <sstream>
@@ -21,6 +22,7 @@ private:
 	string name;
 	int age;
 };
+/*
 template<typename T>
 std::ostream &operator<<( std::ostream &os,  ArrayT<T> &a ) 
 {
@@ -33,6 +35,7 @@ std::istream & operator>>(std::istream &is, ArrayT<T> &a)
 	a.input(is);
 	return is;
 }
+*/
 std::ostream & operator<<(std::ostream &os, Person & p)
 {
 	os << p.name <<":"<< p.age;
