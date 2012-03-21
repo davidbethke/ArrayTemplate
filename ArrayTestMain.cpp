@@ -4,8 +4,8 @@
 #include "stdafx.h"
 #include "ArrayT.h"
 //#include "ArrayTHelper.h"
-#include <iostream>
-
+#include <iostream>#include <sstream>
+#include <sstream>
 using namespace std;
 
 template<typename T>
@@ -14,6 +14,12 @@ std::ostream &operator<<( std::ostream &os,  ArrayT<T> &a )
 	a.print(os);
    return os; // enables cout << x << y;
 } //
+template<typename T>
+std::istream & operator>>(std::istream &is, ArrayT<T> &a)
+{
+	a.input(is);
+	return is;
+}
 
 int main()
 {
@@ -25,7 +31,17 @@ int main()
 	cout <<endl;
 	cout << "Direct call to print" << endl;
 	myAInt.print(std::cout);
+	cout <<endl;
 	cout << "Operator <<" <<endl;
+	cout << myAInt <<endl;
+	cout <<endl;
+	stringstream ss;
+//	ss<<0<<"1 "<<"2 "<<3<<4<<5<<6<<7<<8<<9;
+	ss<<"0 "<<"1 "<<"2 "<<"3 "<<"4 "<<"5 "<<"6 "<<"7 "<<"8 "<<"9 ";
+
+	ss >> myAInt;
+	cout <<endl;
+	cout << "Operator << after >> " <<endl;
 	cout << myAInt <<endl;
 	getchar();
 	return 0;

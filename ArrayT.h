@@ -123,8 +123,12 @@ void ArrayT<T>::print(std::ostream& os)
 template< typename T>
 void ArrayT<T>::input(std::istream& is)
 {
+	//std::cout<< "input called"<<size<<endl;
 	for(int i=0; i< size;++i)
+	{
 		is >> ptr[i];
+		//cout <<ptr[i];
+	}
 }
 
 
