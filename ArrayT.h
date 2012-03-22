@@ -3,6 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include "ArrayTHelper.h"
 // Portions gratuitously copied from Array.h, Array.cpp
 
 template< typename T>
