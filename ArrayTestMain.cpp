@@ -1,5 +1,9 @@
 // ArrayTestMain.cpp : Defines the entry point for the console application.
 //
+// ITSE 2431 Lab: 5
+// Dave Bethke
+// Prob 1a and b
+// Should work
 
 #include "stdafx.h"
 #include "ArrayT.h"
@@ -52,10 +56,10 @@ int main()
 	cout << daves;
 	getchar();
 	// same as above multiple, animals are people too :)
-	pStream.clear();
+	//pStream.clear();
 	string pValuesOther="bird:23 turtle:88";
 	stringstream pStreamOther(pValuesOther);
-	pStream << "bird:23 " << " turtle:88 ";
+	//pStream << "bird:23 " << " turtle:88 ";
 	pStreamOther >> daves[2]>> daves[3];
 	cout << "Print Person after multiple>> kat"<<endl;
 	cout << daves;

@@ -1,4 +1,4 @@
-﻿Build started 3/21/2012 10:54:26 PM.
+﻿Build started 3/21/2012 10:55:51 PM.
      1>Project "D:\Users\dave\Documents\Visual Studio 2010\Projects\ArrayTestMain\ArrayTestMain\ArrayTestMain.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\ArrayTestMain.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -26,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.64
+Time Elapsed 00:00:03.23
